@@ -1,0 +1,156 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sound Meter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="title">Sound Meter</h1>
+      <p class="subtitle">Presentation of the creative process</p>
+      <nav class="top-nav">
+        <a href="#portada">Project</a>
+        <a href="#objetivo">Objectives</a>
+        <a href="#materiales">Materials</a>
+        <a href="#proceso">Process</a>
+        <a href="#resultados">Results</a>
+        <a href="#conclusiones">Conclusions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Portada -->
+    <section id="portada" class="card cover">
+      <h2>Project: Sound Meter</h2>
+      <p class="meta">By Juan David Ramírez, Pedro Pablo Solano and Nicolas Romero • Of 9B • In 2025</p>
+      <div class="cover-grid">
+        <img src="Image1.jpg" alt="Prototipo del proyecto Pasillo Silencioso" style="width:100%; border-radius:8px;">
+        <div>
+          <p>The "Sound Meter" project seeks to reduce noise in hallways through a system that measures sound and activates lights that indicate the ambient volume level.</p>
+          <a class="btn" href="#proceso">Show process</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Objetivo -->
+    <section id="objetivo" class="card">
+      <h2>Objective of the project</h2>
+      <p>Design a system with sound sensors and LED lights that maintains peace and quiet in school spaces by providing visual alerts when noise exceeds certain levels.</p>
+    </section>
+
+    <!-- Materiales -->
+    <section id="materiales" class="card">
+      <h2>Components and Materials</h2>
+      <ul>
+        <li>Sound Sensor</li>
+        <li>Sensor PIR</li>
+        <li>LED red, LED yellow and LED green</li>
+        <li>ESP32</li>
+        <li>Cables</li>
+        <li>Silicone</li>
+        <li>Electrical tape</li>
+        <li>3D printing</li>
+      </ul>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="card">
+      <h2>Development process</h2>
+      <ol class="steps">
+        <li>
+          <h3>Identify the problem</h3>
+          <p>We detect that in the hallway in front of the technology classroom were a lot of sound when the childrens passed by, and it affect the class all the time.</p>
+        </li>
+        <li>
+          <h3>System design</h3>
+          <p>We proposed to create a functional circuit that depending on what the sound sensor detects, shows through LED lights, which would be: green LED when the volume is low, yellow LED when it is moderate and red LED when it is high.</p>
+        </li>
+        <li>
+          <h3>Problems on the design</h3>
+          <p>The teacher made us see that the children were not gonna pay attention to us with just a few little lights, and in addition, our project was missing 1 actuator and a sensor.</p>
+        </li>
+        <li>
+          <h3>Solutions</h3>
+          <p>We added an LCD screen to show the status of the LEDs, and so that it was not so intuitive, we also added a PIR sensor so that when it does not detect movement it does not say the volume status, and finally a mini speaker in which the voice of someone is recorded to say "please be quiet", and thus try to raise awareness.</p>
+        </li>
+        <li>
+          <h3>Web page</h3>
+          <p>We decided to create a website for the project so we could see the number of times there are shouts per day and week, and then compare weeks or days to see if the project is working or not.</p>
+        </li>
+        <li>
+          <h3>Programming</h3>
+          <p>We told Chat GPT about the whole project and asked him to make us a working code, and fortunately it worked on the first attempts.</p>
+        </li>
+        <li>
+          <h3>3D disgn</h3>
+          <p>For better precision, we created the entire box for the project in Tinkercad so we could print it later. This box helped us present the project without adding much.</p>
+        </li>
+        <li>
+          <h3>Construction</h3>
+          <p>After having the circuit with the code working, we began to introduce it to the box, with the help of insulating tape and silicone, so that the result would not look ugly, and we could present it to you.</p>
+        </li>
+        <li>
+          <h3>Tests and adjustments</h3>
+          <p>Tests were conducted in the classroom to calibrate the sensor sensitivity and the response time of the LEDs and speaker.</p>
+        </li>
+      </ol>
+
+      <div class="gallery">
+        <figure>
+          <img src="Image2.jpg" alt="">
+        </figure>
+        <figure>
+          <img src="Image3.jpg" alt="">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados" class="card">
+      <h2>Results</h2>
+      <p>The system worked correctly, turning on the LEDs depending on the noise level, and the speaker if the noise was too loud. It raised some awareness among the children who were presented with the project on Science Day. Below is a table showing how the project works.</p>
+      <table class="results-table">
+        <thead>
+          <tr><th>Situation</th><th>Activated thing</th><th>Result of the machine</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A calm or low sound</td><td>LED green</td><td>Suitable environment</td></tr>
+          <tr><td>Moderated conversation</td><td>LED yellow</td><td>Visual advertence</td></tr>
+          <tr><td>Loud noise</td><td>LED red and the speaker </td><td>Please be quiet</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Conclusiones -->
+    <section id="conclusiones" class="card">
+      <h2>Conclusions</h2>
+      <ul>
+        <li>The project helped raise awareness among students about noise control on Science Day.</li>
+        <li>A functional system was implemented with basic electronic components.</li>
+        <li>In a future we can improve the page, to show a comparation between de weeks.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© 2025 — Juan David Ramírez, Pedro Pablo Solano and Nicolas Romero</div>
+      <div>Project: Sound Meter</div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+      });
+    });
+  </script>
+</body>
+</html>
